@@ -1,6 +1,8 @@
 import numpy as np
 import sys 
-
+ 
+## the code constructing the graph and Dijkstra's algorithm is written by Alexey Klochay 
+## https://www.udacity.com/blog/2021/10/implementing-dijkstras-algorithm-in-python.html
 class Graph(object):
     def __init__(self, nodes, init_graph):
         self.nodes = nodes
@@ -79,6 +81,8 @@ def print_result(previous_nodes, shortest_path, start_node, target_node):
     path.append(start_node)
     
     return list(reversed(path))
+
+## end of Alexey Klochay's code
 
 def get_times(x, node_adjacency):
   #refer to node_adjacency
